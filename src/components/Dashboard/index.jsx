@@ -2,7 +2,7 @@ import iconSun from '../../assets/icon-sun.svg'
 import iconSearch from '../../assets/icon-search.svg'
 import iconCompany from '../../assets/icon-company.svg'
 import iconLocation from '../../assets/icon-location.svg'
-import iconMoon from '../../assets/icon-moon.svg'
+// import iconMoon from '../../assets/icon-moon.svg'
 import iconTwitter from '../../assets/icon-twitter.svg'
 import iconWebsite from '../../assets/icon-website.svg'
 
