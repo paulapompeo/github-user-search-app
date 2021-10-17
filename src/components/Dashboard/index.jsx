@@ -15,7 +15,8 @@ import * as S from './styles'
 
 export function Dashboard() {
 
-  const [user, setUser] = useState('octocat');
+  // const [user, setUser] = useState('octocat');
+  const [user, setUser] = useState('');
   const [userData, setUserData] = useState({});
   const [inputError, setInputError] = useState('');
 
@@ -23,7 +24,6 @@ export function Dashboard() {
   console.log({ userData })
 
   console.log(userData.name)
-
 
 
   async function handleAddRepositories(event) {
@@ -106,7 +106,7 @@ export function Dashboard() {
                 <div className="user-social">
                   <div>
                     <div className="social">
-                      <img src={iconLocation} alt="location" />
+                      <img className="svg" src={iconLocation} alt="location" />
                       <p>{userData.location ? userData.location : 'San Francisco'}</p>
                     </div>
                     <div className="social">

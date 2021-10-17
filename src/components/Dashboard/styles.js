@@ -20,7 +20,7 @@ export const Header = styled.header`
   h1 {
     font-weight: 700;
     font-size: 26px;
-    line-height: 38px;
+    line-height: 39px;
   }
 
   .app-theme {
@@ -30,7 +30,7 @@ export const Header = styled.header`
     span {
       font-weight: 700;
       font-size: 13px;
-      line-height: 19px;
+      line-height: 20px;
       margin-right: 16px;
       letter-spacing: 2.5px
     }
@@ -54,6 +54,7 @@ export const Form = styled.form`
 
   .user-input {
     display: flex;
+    height: 25px;
 
     img {
       width: 24px;
@@ -128,10 +129,13 @@ export const UserInfo = styled.div`
     > p {
     font-size: 15px;
     line-height: 22px;
+    margin-top: 4px;
     }
   }
 
   .user-name {
+    margin-top: -4px;
+
     h2 {
       font-weight: 700;
       font-family: 'Space Mono', monospace;
@@ -152,6 +156,7 @@ export const UserInfo = styled.div`
     height: 25px;
 
     p {
+      margin-top: 4px;
       font-size: 15px;
       line-height: 25px;
       mix-blend-mode: normal;
@@ -209,6 +214,10 @@ export const GithubData = styled.div`
   .social {
     display: flex;
     margin-bottom: 20px;
+
+    .svg {
+      fill: red;
+    }
 
     img {
       height: 20px;
