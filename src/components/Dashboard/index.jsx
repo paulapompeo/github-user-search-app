@@ -5,7 +5,7 @@ import iconSun from '../../assets/icon-sun.svg'
 import iconSearch from '../../assets/icon-search.svg'
 import iconCompany from '../../assets/icon-company.svg'
 import iconLocation from '../../assets/icon-location.svg'
-// import iconMoon from '../../assets/icon-moon.svg'
+import iconMoon from '../../assets/icon-moon.svg'
 import iconTwitter from '../../assets/icon-twitter.svg'
 import iconWebsite from '../../assets/icon-website.svg'
 
@@ -13,18 +13,17 @@ import avatar from '../../assets/profile.png'
 
 import * as S from './styles'
 
-export function Dashboard() {
+export function Dashboard({handleThemeChange, theme}) {
 
-  // const [user, setUser] = useState('octocat');
+  console.log({theme})
+
   const [user, setUser] = useState('');
   const [userData, setUserData] = useState({});
   const [inputError, setInputError] = useState('');
 
-  console.log({ inputError })
-  console.log({ userData })
-
-  console.log(userData.name)
-
+  // console.log({ inputError })
+  // console.log({ userData })
+  // console.log(userData.name)
 
   async function handleAddRepositories(event) {
     event.preventDefault()
@@ -52,8 +51,10 @@ export function Dashboard() {
           <S.Header>
             <h1>devfinder</h1>
             <div className="app-theme">
-              <span>LIGHT</span>
-              <img src={iconSun} alt="light-theme" />
+              <button type="button" onClick={handleThemeChange}>
+                <span>{theme === 'dark' ? 'LIGHT': 'DARK'}</span>
+                <img src={theme === 'dark' ? iconSun : iconMoon} alt="light-theme" />
+              </button>
             </div>
           </S.Header>
           <S.Form onSubmit={handleAddRepositories}>
@@ -80,7 +81,8 @@ export function Dashboard() {
               <div className="user-main-info">
                 <div className="user-name">
                   <h2>{userData.name ? userData.name : 'The Octocat'}</h2>
-                  <span>@octocat</span>
+                  {/* TODO: deixar dinamico */}
+                  <span>@octocat</span> 
                 </div>
                 {/* TODO: fazer função para horário */}
                 <p>{userData.created_at ? `Joined ${userData.created_at}` : 'Joined 25 Jan 2011'}</p> 

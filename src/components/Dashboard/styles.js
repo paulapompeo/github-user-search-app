@@ -21,18 +21,24 @@ export const Header = styled.header`
     font-weight: 700;
     font-size: 26px;
     line-height: 39px;
+    color: var(--title)
   }
 
   .app-theme {
-    display: flex;
-    align-items: center;
+    button {
+      background-color: var(--background);
+      border: none;
+      display: flex;
+      align-items: center;  
+    }
 
     span {
       font-weight: 700;
       font-size: 13px;
       line-height: 20px;
       margin-right: 16px;
-      letter-spacing: 2.5px
+      letter-spacing: 2.5px;
+      color: var(--theme)
     }
 
     img {
@@ -46,7 +52,7 @@ export const Form = styled.form`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--dark-blue);
+  background-color: var(--card);
   margin-top: 36px;
   width: 730px;
   height: 69px;
@@ -64,9 +70,9 @@ export const Form = styled.form`
     }
 
     input {
-      background: var(--dark-blue);
+      background: var(--card);
       border: 0;
-      color: var(--white);
+      color: var(--input);
       font-size: 18px;
       line-height: 25px;
       font-family: 'Space Mono', monospace;
@@ -74,11 +80,11 @@ export const Form = styled.form`
       width: 254px;
       height: 25px;
 
-      /* -webkit-text-fill-color: var(--white) !important; */
-      /* transition: background-color 5000s ease-in-out 0s; */
+      /* -webkit-text-fill-color: var(--white) !important;
+      transition: background-color 5000s ease-in-out 0s; */
 
       &::placeholder {
-        color: var(--white);
+        color: var(--placeholder);
         font-size: 18px;
         line-height: 25px;
         font-family: 'Space Mono', monospace;
@@ -88,8 +94,8 @@ export const Form = styled.form`
   }
 
   button {
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: var(--buttonBackground);
+    color: var(--buttonColor);
     border: 0;
     border-radius: 10px;
     width: 106px;
@@ -104,7 +110,7 @@ export const Form = styled.form`
 `
 export const UserData = styled.div`
   margin-top: 24px;
-  background-color: var(--dark-blue);
+  background-color: var(--card);
   width: 730px;
   height: 419px;
   border-radius: 15px;
@@ -124,12 +130,12 @@ export const UserInfo = styled.div`
   .user-main-info {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */ //conferir altura da indo de Joined
 
     > p {
     font-size: 15px;
     line-height: 22px;
     margin-top: 4px;
+    color: var(--joined);
     }
   }
 
@@ -141,10 +147,11 @@ export const UserInfo = styled.div`
       font-family: 'Space Mono', monospace;
       font-size: 26px;
       line-height: 39px;
+      color: var(--name)
     }
 
     span {
-      color: var(--blue);
+      color: var(--user);
       font-size: 16px;
       line-height: 24px;
     }
@@ -160,6 +167,7 @@ export const UserInfo = styled.div`
       font-size: 15px;
       line-height: 25px;
       mix-blend-mode: normal;
+      color: var(--bio);
       opacity: 0.75;
     }
   }
@@ -169,7 +177,7 @@ export const GithubData = styled.div`
   margin-top: 32px;
 
   .github-info {
-    background-color: var(--dark);
+    background-color: var(--background);
     width: 480px;
     height: 85px;
     border-radius: 10px;
@@ -180,12 +188,14 @@ export const GithubData = styled.div`
     p {
       font-size: 13px;
       line-height: 19px;
+      color: var(--valueLabel);
     }
 
     h3 {
       font-weight: 700;
       font-size: 22px;
       line-height: 33px;
+      color: var(--value)
     }
   }
 
@@ -224,7 +234,9 @@ export const GithubData = styled.div`
       margin-right: 16px;
     }
 
+    // todo: svg
     p {
+      color: var(--value);
       font-size: 15px;
       line-height: 22px;
     }

@@ -1,0 +1,33 @@
+export const lightTheme = {
+  background: '#F6F8FF',
+  title:  '#222731', 
+  theme: '#697C9A',
+  placeholder: '#4B6A9B',
+  input: '#222731',
+  name: '#2B3442',
+  joined: '#697C9A',
+  bio: '#4B6A9B',
+  valueLabel: '#4B6A9B',
+  value: '#2B3442',
+  card: '#FEFEFE',
+  buttonBackground: '#0079FF',
+  buttonColor: '#ffffff',
+  user: '#0079FF',
+}
+
+export const darkTheme = {
+  background: '#141D2F',
+  title:  '#ffffff', 
+  theme: '#ffffff',
+  placeholder: '#ffffff',
+  input: '#ffffff',
+  name: '#ffffff',
+  joined: '#ffffff',
+  bio: '#ffffff',
+  valueLabel: '#ffffff',
+  value: '#ffffff',
+  card: '#1E2A47',
+  buttonBackground: '#0079FF',
+  buttonColor: '#ffffff',
+  user: '#0079FF',
+}

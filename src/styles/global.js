@@ -1,15 +1,21 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-  :root { 
-    // dark mode
-    --blue: #0079FF;
-    --white: #ffffff;
-    --dark: #141D2F;
-    --dark-blue: #1E2A47;
-
-    --light-grey: #F6F8FF;
-    --dirty-white: #FEFEFE;
+  :root {   
+    --background:       ${({ theme }) => theme.background};
+    --title:            ${({ theme }) => theme.title}; 
+    --theme:            ${({ theme }) => theme.theme};
+    --placeholder:      ${({ theme }) => theme.placeholder};
+    --input:            ${({ theme }) => theme.input};
+    --name:             ${({ theme }) => theme.name};
+    --joined:           ${({ theme }) => theme.joined};
+    --bio:              ${({ theme }) => theme.bio};
+    --valueLabel:       ${({ theme }) => theme.valueLabel};
+    --value:            ${({ theme }) => theme.value};
+    --card:             ${({ theme }) => theme.card};
+    --buttonBackground: ${({ theme }) => theme.buttonBackground};
+    --buttonColor:      ${({ theme }) => theme.buttonColor};
+    --user:             ${({ theme }) => theme.user};
   }
   * {
     margin: 0;
@@ -30,20 +36,16 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
   body {
-    background: var(--dark);
+    background: ${({ theme }) => theme.background};
     -webkit-font-smoothing: antialiased;
   }
   body, textarea, h1 {
     font-family: 'Space Mono', monospace;
     font-weight: 400;
-    color: var(--white)
+    /* color: var(--white) */
   }
   button {
     font-family: 'Space Mono', monospace;
     cursor: pointer;
   }
-  /* [disabled] {
-    opacity: 0.6;
-    cursor: not-allowed;
-  } */
 `
