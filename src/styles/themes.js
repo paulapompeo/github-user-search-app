@@ -13,6 +13,7 @@ export const lightTheme = {
   buttonBackground: '#0079FF',
   buttonColor: '#ffffff',
   user: '#0079FF',
+  boxShadow: 'rgba(70, 96, 187, 0.198567)',
 }
 
 export const darkTheme = {

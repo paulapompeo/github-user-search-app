@@ -12,6 +12,7 @@ export const Content = styled.div`
   width: 730px;
   margin-top: 144px;
 `
+
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;
@@ -57,11 +58,13 @@ export const Form = styled.form`
   width: 730px;
   height: 69px;
   border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0px 16px 30px -10px var(--boxShadow);
 
   .user-input {
     display: flex;
     height: 25px;
-
+    
     img {
       width: 24px;
       height: 24px;
@@ -80,7 +83,7 @@ export const Form = styled.form`
       width: 254px;
       height: 25px;
 
-      /* -webkit-text-fill-color: var(--white) !important;
+      /* -webkit-text-fill-color: var(--placeholder) !important;
       transition: background-color 5000s ease-in-out 0s; */
 
       &::placeholder {
@@ -91,6 +94,15 @@ export const Form = styled.form`
         font-weight: 400;
       }
     }
+  }
+
+  span {
+    color: #F74646;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    margin-right: 24px;
   }
 
   button {
@@ -116,6 +128,8 @@ export const UserData = styled.div`
   border-radius: 15px;
   display: flex;
   padding: 48px;
+  box-shadow: 0px 16px 30px -10px var(--boxShadow);
+
 
   > img {
     width: 117px;
