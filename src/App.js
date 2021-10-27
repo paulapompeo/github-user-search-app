@@ -5,7 +5,7 @@ import { darkTheme, lightTheme } from './styles/themes'
 import { Dashboard } from './components/Dashboard';
 
 function App() {
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('dark')
 
   function handleThemeChange() {
     theme === 'light' ? setTheme('dark') : setTheme('light')
