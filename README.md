@@ -1,7 +1,7 @@
 # Solution on Frontend Mentor
 [Frontend Mentor](https://www.frontendmentor.io/solutions/first-github-user-search-app-7ZSOQ96R0)
 
-# Solution on Frontend Mentor
+# Preview
 [Preview Site](https://gallant-allen-32e246.netlify.app/)
 
 # Getting Started with Create React App
